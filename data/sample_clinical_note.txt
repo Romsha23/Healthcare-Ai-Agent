@@ -1,0 +1,27 @@
+CLINICAL ENCOUNTER & DISCHARGE NOTE
+Patient: John Doe | MRN: 902841 | DOB: 1962-04-12 | Gender: Male
+Encounter Date: 2026-10-10 | Primary Oncologist: Dr. E. Vance, MD
+
+SITUATION:
+Patient is a 64-year-old male presenting for follow-up evaluation and management of advanced Stage IV Non-Small Cell Lung Cancer (NSCLC, Adenocarcinoma). Recently discharged from inpatient oncology ward following cycle 1 stabilization.
+
+BACKGROUND:
+- Past Medical History: Type 2 Diabetes Mellitus (complicated by diabetic nephropathy), Atrial Fibrillation, Hypertension.
+- Allergies: Penicillin (severe anaphylaxis).
+- Biomarker Profile: PD-L1 TPS 75% (High Expression), EGFR mutation negative, ALK rearrangement negative.
+- Current Medications:
+  1. Warfarin 5mg PO daily (anticoagulation for atrial fibrillation)
+  2. Aspirin 81mg PO daily
+  3. Metformin 1000mg PO BID
+
+ASSESSMENT & OBJECTIVE FINDINGS:
+- Vitals: BP 138/84 mmHg, HR 74 bpm (irregularly irregular), SpO2 96% on room air.
+- Renal Profile: Serum Creatinine 2.4 mg/dL, estimated eGFR 28 mL/min/1.73m2 (indicating severe CKD Stage 4).
+- Hematology: Hemoglobin 11.2 g/dL, Platelets 210 x10^3/uL, INR 2.4 (therapeutic).
+- Diagnostic Review: High bleed risk due to concurrent Warfarin + Aspirin therapy. Metformin is contraindicated due to severe renal impairment (eGFR < 30 mL/min).
+
+RECOMMENDATIONS & PLAN:
+1. Oncology Plan: Initiate first-line Pembrolizumab monotherapy (200 mg IV Q3W) per NCCN Category 1 guidelines for PD-L1 >= 50%.
+2. Medication Safety: Discontinue Metformin immediately due to lactic acidosis risk at eGFR < 30. Transition to insulin or renal-adjusted DPP-4 inhibitor.
+3. Bleeding Risk: Re-evaluate concurrent Aspirin with cardiology; consider stopping Aspirin unless acute coronary event within 12 months.
+4. Follow-up: Repeat renal function and CBC in 1 week.

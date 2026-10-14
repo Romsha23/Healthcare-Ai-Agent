@@ -1,0 +1,72 @@
+{
+  "resourceType": "Bundle",
+  "id": "sample-bundle-p001",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "P001",
+        "name": [{"given": ["John"], "family": "Doe"}],
+        "birthDate": "1962-04-12",
+        "gender": "male"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "C001",
+        "code": {"coding": [{"display": "Non-Small Cell Lung Cancer (Stage IV)", "code": "254637007"}]},
+        "clinicalStatus": {"coding": [{"code": "active"}]}
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "MR001",
+        "status": "active",
+        "medicationCodeableConcept": {"coding": [{"display": "Warfarin 5mg daily", "code": "855332"}]}
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "MR002",
+        "status": "active",
+        "medicationCodeableConcept": {"coding": [{"display": "Aspirin 81mg daily", "code": "1191"}]}
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "MR003",
+        "status": "active",
+        "medicationCodeableConcept": {"coding": [{"display": "Metformin 1000mg BID", "code": "6809"}]}
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "AI001",
+        "code": {"coding": [{"display": "Penicillin", "code": "372687004"}]},
+        "criticality": "high"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OB001",
+        "code": {"coding": [{"display": "eGFR", "code": "33914-3"}]},
+        "valueQuantity": {"value": 28.0, "unit": "mL/min/1.73m2"}
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "OB002",
+        "code": {"coding": [{"display": "PD-L1 TPS", "code": "85147-7"}]},
+        "valueQuantity": {"value": 75.0, "unit": "%"}
+      }
+    }
+  ]
+}

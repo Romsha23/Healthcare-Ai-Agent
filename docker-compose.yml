@@ -1,0 +1,84 @@
+yaml# Clinical Data Pipeline — Docker Compose
+# Runs the full SDTM/ADaM/TLF pipeline in a containerized environment
+#
+# Usage:
+#   docker-compose up pipeline     # Run full pipeline
+#   docker-compose up tests        # Run test suite
+#   docker-compose run pipeline python -m src.sdtm.domains
+#
+# Author: Girish Rajeev
+
+version: "3.9"
+
+services:
+
+  # ── Full pipeline runner ───────────────────────────────────────────────────
+  pipeline:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    container_name: clinical-data-pipeline
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - PYTHONPATH=/app
+      - ENV=${ENV:-production}
+      - LOG_LEVEL=${LOG_LEVEL:-info}
+    volumes:
+      - ./data:/app/data
+      - pipeline_outputs:/app/outputs
+      - pipeline_logs:/app/logs
+    command: >
+      python -c "
+      from src.protocol_automation.parser import ProtocolParser;
+      print('Clinical Data Pipeline ready.');
+      print('Modules: protocol_automation, sdtm, adam, tlf, models')
+      "
+    restart: "no"
+
+  # ── Test runner ────────────────────────────────────────────────────────────
+  tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: production
+    container_name: clinical-pipeline-tests
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-test-key}
+      - PYTHONPATH=/app
+    volumes:
+      - ./data:/app/data
+    command: >
+      python -m pytest tests/ -v
+      --cov=src
+      --cov-report=term-missing
+      --tb=short
+    restart: "no"
+
+  # ── Development shell ──────────────────────────────────────────────────────
+  dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: builder
+    container_name: clinical-pipeline-dev
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - PYTHONPATH=/app
+      - ENV=development
+    volumes:
+      - ./src:/app/src
+      - ./tests:/app/tests
+      - ./data:/app/data
+      - ./notebooks:/app/notebooks
+    command: /bin/bash
+    stdin_open: true
+    tty: true
+    profiles:
+      - dev
+
+volumes:
+  pipeline_outputs:
+    driver: local
+  pipeline_logs:
+    driver: local

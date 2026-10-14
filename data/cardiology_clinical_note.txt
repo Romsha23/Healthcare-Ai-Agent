@@ -1,0 +1,39 @@
+CLINICAL ENCOUNTER & PROGRESS NOTE
+Patient: Mary Johnson | MRN: 541092 | DOB: 1955-08-14 | Gender: Female
+Encounter Date: 2026-10-11 | Attending Cardiologist: Dr. Robert Miller, MD
+Department: Inpatient Cardiology & Heart Failure Unit
+
+CHIEF COMPLAINT:
+Acute decompensated heart failure exacerbation and progressive dyspnea on exertion.
+
+BACKGROUND & PAST MEDICAL HISTORY:
+- Chronic Heart Failure with Reduced Ejection Fraction (HFrEF, ischemic etiology, baseline LVEF 28%).
+- Primary Hypertension (15 years duration).
+- Chronic Kidney Disease Stage 3 (baseline eGFR 34 mL/min/1.73m2).
+- Osteoarthritis of bilateral knees.
+- Documented Allergies: Sulfa drugs (rash and facial hives).
+
+ACTIVE MEDICATIONS ON ADMISSION:
+1. Furosemide 40mg PO BID (loop diuretic for volume overload)
+2. Lisinopril 20mg PO daily (ACE-inhibitor)
+3. Carvedilol 25mg PO BID (beta-blocker)
+4. Spironolactone 25mg PO daily (mineralocorticoid receptor antagonist)
+5. Digoxin 0.125mg PO daily (inotropic support)
+
+OBJECTIVE FINDINGS & LABS:
+- Vitals: BP 108/65 mmHg, HR 62 bpm (sinus rhythm), SpO2 93% on room air, Weight 78.4 kg.
+- Physical Exam: 2+ pitting bilateral lower extremity edema, elevated JVP (8 cm H2O), bibasilar lung crackles.
+- Serum Chemistry: Creatinine 1.8 mg/dL, estimated eGFR 34 mL/min/1.73m2, Serum Potassium 5.1 mEq/L (borderline elevated), Sodium 137 mEq/L.
+- Cardiac Biomarkers: NT-proBNP 1,450 pg/mL (significantly elevated, consistent with acute volume overload).
+- Transthoracic Echocardiogram: Left ventricular ejection fraction (LVEF) 28%, moderate global hypokinesis.
+
+ASSESSMENT & SAFETY AUDIT:
+- Acute decompensated HFrEF requiring inpatient diuresis.
+- Medication Safety: Concurrent Lisinopril + Spironolactone carries significant hyperkalemia risk, especially with current potassium 5.1 mEq/L and eGFR 34.
+- Digoxin clearance reduced at eGFR 34 mL/min; narrow therapeutic index monitoring required.
+
+PLAN & RECOMMENDATIONS:
+1. Diuretic Optimization: Transition to IV Furosemide 40mg BID to achieve negative fluid balance of 1-1.5L daily.
+2. Electrolyte Monitoring: Check basic metabolic panel and serum potassium every 24 hours. Hold Spironolactone if potassium exceeds 5.2 mEq/L.
+3. Therapeutic Drug Monitoring: Check Digoxin serum trough level at 48 hours post-admission.
+4. Heart Failure GDMT: Re-evaluate transition from ACE-inhibitor to ARNI (Sacubitril/Valsartan) and SGLT2-inhibitor once hemodynamically compensated and euvolemic.
