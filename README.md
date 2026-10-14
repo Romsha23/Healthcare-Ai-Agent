@@ -166,17 +166,7 @@ This platform implements a comprehensive responsible AI framework:
 
 See `STRATEGY.md` for the full enterprise AI transformation roadmap and governance framework.
 
----
-
-## Author
-
-**Girish Rajeev**
-
 Clinical Data Scientist | Data Analyst | Regulatory Standards Leader | AI/ML Solution Engineer
-
-- LinkedIn: [linkedin.com/in/girish-rajeev-756808138](https://www.linkedin.com/in/girish-rajeev-756808138/)
-- GitHub: [github.com/girish-rajeev](https://github.com/girish-rajeev)
-
 ---
 
 *Part of a three-repository clinical AI portfolio:*
