@@ -19,7 +19,7 @@ A production-grade healthcare AI platform built for Oracle Health AI scale — f
 | `src/recommender/` | `treatment_recommender.py`, `ranking_engine.py`, `therapist_matcher.py` | Biomarker-driven treatment recommendation and precision mental health matching |
 | `src/trial_matching/` | `trial_matcher.py` | Real-time clinical trial matching — mirrors Klinixa platform built at Takeda |
 | `src/governance/` | `ai_governance.py` | Bias auditing, fairness metrics, responsible AI checklist, audit logging |
-| `src/serving/` | `api.py`, `Dockerfile`, `docker-compose.yml` | FastAPI model serving, health checks, Docker deployment |
+| `src/serving/` | `api.py` | FastAPI model serving, health checks|
 
 ---
 
@@ -30,7 +30,7 @@ A production-grade healthcare AI platform built for Oracle Health AI scale — f
 - **Treatment Recommender** — Biomarker-driven treatment ranking combining collaborative filtering, clinical rules, and patient profiles (NSCLC, Heart Failure, T2DM)
 - **Therapist-Patient Matching** — Precision mental healthcare matching engine using PHQ-9/GAD-7 clinical profiles, patient preferences, and historical outcome data
 - **AI Governance** — Bias auditing across protected demographic attributes, immutable audit logging, pre-deployment responsible AI checklist, NIST AI RMF alignment
-- **Enterprise Serving** — FastAPI REST API with JWT auth, rate limiting, health checks, model versioning, and Docker/OCI deployment
+- **Enterprise Serving** — FastAPI REST API with JWT auth, rate limiting, health checks, model versioning,OCI deployment
 - **AI Transformation Strategy** — Full enterprise AI roadmap in `STRATEGY.md` covering governance, ROI measurement, pilot sequencing, and scaling
 
 ---
@@ -44,7 +44,7 @@ A production-grade healthcare AI platform built for Oracle Health AI scale — f
 | ML / DL | scikit-learn, TensorFlow, numpy, pandas |
 | FHIR | fhir.resources, requests |
 | Governance | Custom fairness framework, NIST AI RMF alignment |
-| Serving | FastAPI, uvicorn, pydantic, docker |
+| Serving | FastAPI, uvicorn, pydantic |
 | Testing | pytest, pytest-asyncio, httpx |
 
 ---
@@ -79,7 +79,7 @@ v
 AI Governance          --  Bias auditing · audit logging · responsible AI checks
 |
 v
-FastAPI Serving        --  REST API · JWT auth · Docker · OCI-ready
+FastAPI Serving        --  REST API · JWT auth · OCI-ready
 |
 v
 Clinician / Member Facing Applications
@@ -125,8 +125,7 @@ healthcare-ai-agents/
 |   |   +-- ai_governance.py       Bias auditing + audit logging
 |   +-- serving/
 |       |-- api.py                 FastAPI REST endpoints
-|       |-- Dockerfile
-|       +-- docker-compose.yml
+|       
 |-- tests/
 |   +-- test_healthcare_ai.py
 |-- notebooks/
