@@ -5,8 +5,6 @@ yaml# Clinical Data Pipeline — Docker Compose
 #   docker-compose up pipeline     # Run full pipeline
 #   docker-compose up tests        # Run test suite
 #   docker-compose run pipeline python -m src.sdtm.domains
-#
-# Author: Girish Rajeev
 
 version: "3.9"
 
